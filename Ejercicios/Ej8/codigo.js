@@ -4,35 +4,38 @@ alert(esPalindromo(cadena));
 
 function esPalindromo(cadena){
     
-
     var cadenaMinus=cadena.toLowerCase();
+    //array .split(""); letra a letra (deja espacios!!)
+    //array .split(" "); palabra a palabra
+    var cadenaArray=cadenaMinus.split("");
     
-    //array
-    var cadenaArray=cadenaMinus.split(" ");
-    document.writeln("Array1 ["+cadenaArray+"]\n");
-    //array al reves
-    var cadenaArrayReves=cadenaArray.reverse();
-    document.writeln("Array2 ["+cadenaArrayReves+"]");
-    var iguales=true;
+    var cadenaSinEspacios="";
+    
+    for(var i=0; i<=cadenaArray.length-1;i++){
+        if(cadenaArray[i] != " "){
+            cadenaSinEspacios+=cadenaArray[i];
+        }
+    }
 
-    for(i in cadenaArray){
+    var letras=cadenaSinEspacios.split("");
+    var letarAlReves= cadenaSinEspacios.split("").reverse();
+  
+    var iguales=true;
+    for(var i=0;i<=letras.length-1;i++){
         
-        if(cadenaArray[i]==cadenaArrayReves[i]){
-            
+        if(letras[i]==letarAlReves[i]){
+            //es igual, todo bien
         }else{
+            //no es palindromo
             iguales=false;
         }
-        
-        
     }
-    var resultado;
     
+    var resultado;
     if(iguales){
         resultado="Es palindromo";
     }else{
         resultado="No es palindromo";
     }
-    
-    return resultado;
-    
+    return resultado;    
 }

@@ -1,0 +1,9 @@
+#presa{
+	transition: .5s;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-color:#888888;
+	top: 10%;
+	left: 10%;
+}	

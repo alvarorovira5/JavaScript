@@ -1,7 +1,15 @@
-var num = prompt("Introduce un numero: ");
-var resultado=1;
+function factorial(){
+    var numero=document.getElementById("numero").value;
 
-for(var i=num;i>1;i--){
-    resultado=i*resultado;
+    var resultado=1;
+    if(numero==0){
+        document.getElementById("resultado").value=resultado;
+    }else{
+        for(var i=numero;i>1;i--){
+        resultado=i*resultado;
+        }
+        document.getElementById("resultado").value=resultado;
+    }
 }
-alert(resultado);
+
+

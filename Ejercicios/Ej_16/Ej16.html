@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <title>Ejercicio 16</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+        <script type= "text/javascript"src="codigo.js" ></script>
+    </head>
+    <body>   
+        <div id="form">
+            <fieldset>
+                <legend><h1>Formulario</h1></legend>
+                <form action="index.html" method="post" onsubmit="return validarFormulario()">
+
+                <input type="text" id="nombre" name="nombre" size="28" placeholder="Nombre*"></input><br/>
+                <label id="errorNombre"></label>
+                <br/>
+
+                <input type="text" id="primerApellido" name="primerApellido" size="28" placeholder="1ºApellido*"></input><br/>
+                <label id="errorPrimerApellido"></label>
+                <br/>
+
+                <input type="text" id="email" name="email" size="28" placeholder="Email*"></input> <br/>
+                <label id="errorEmail"></label>
+                <br/>
+
+                <input type="text" id="telefono" name="telefono" size="28" placeholder="Teléfono Ej.623456789"></input><br/>
+                <label id="errorTelofono"></label>
+                <br/>
+
+                <input type="text" id="dniOnie" name="dniOnie" size="28" placeholder="DNI o NIE Ej. 1234567x o y1234567x"></input><br/>
+                <label id="errorDNIoNIE"></label>
+                <br/>
+
+                <input type="submit" value="Enviar"> </button>
+                </form>
+            </fieldset>
+	   </div>
+
+    </body>
+</html>
